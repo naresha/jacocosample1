@@ -20,9 +20,6 @@ dependencies {
     compile project(':p1')
 }
 jacocoTestReport{
-    //additionalSourceDirs  = fileTree('../p1/src').include('**/*.java')
     additionalSourceDirs = files(rootProject.subprojects.sourceSets.main.allSource.srcDirs)
     sourceDirectories = files(rootProject.subprojects.sourceSets.main.allSource.srcDirs)
 }
-
-//println rootProject.subprojects.sourceSets.main.allSource.srcDirs
